@@ -14,8 +14,8 @@ int main (void)
        
        
 
-    float r1 = pow(a1 + b1,3) - (pow(a1,3)+3*(pow(a1,2))*b1)/3*a1*(pow(b1,2)) + pow(b1,3);
-    double r2 = pow(a2 + b2,3) - (pow(a2,3)+3*(pow(a2,2))*b2)/3*a2*(pow(b2,2)) + pow(b2,3);
+    float r1 = (pow(a1 + b1,3) - (pow(a1,3)+3*(pow(a1,2))*b1))/(3*a1*(pow(b1,2)) + pow(b1,3));
+    double r2 = (pow(a2 + b2,3) - (pow(a2,3)+3*(pow(a2,2))*b2))/(3*a2*(pow(b2,2)) + pow(b2,3));
     
     printf("Result for float is: %.30f\nResult for double is: %.30f\n", r1, r2);
 }
